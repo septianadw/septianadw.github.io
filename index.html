@@ -1,1 +1,403 @@
-hello
+<!DOCTYPE html>
+<head>
+<title>Ads Banner</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0", user-scalable=no, shrink-to-fit=no/>
+<style type="text/css">
+body{
+    width: 728px;
+    height: 90px;
+    position: relative;
+    margin: 10px auto 0;
+}
+#slider-shadow {
+    background: #d1edf9;
+    width: 728px;
+    height: 90px;
+    background: url(images/bg1.jpg) no-repeat left bottom;
+    position: relative;
+    margin: 10px auto 0;
+}
+
+#slider-shadow a{
+    border:1px solid;
+    width: 728px;
+    height: 90px;
+}
+
+ul li {
+    list-style-type: none;
+}
+#slider {
+    width: 570px;
+    height: 90px;
+    overflow: visible;
+    position: relative;
+}
+
+#slider:hover #progress {
+    background-color:rgba(255,255,255,0.0);
+}
+
+.marquee {
+  height: 90px;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: background-color 250ms;
+  -moz-transition: background-color 250ms;
+  -ms-transition: background-color 250ms;
+  -o-transition: background-color 250ms;
+  transition: background-color 250ms;
+}
+
+.marquee p {
+  position: absolute;
+  font-family: Tahoma, Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 0px #000000;
+ /* filter: dropshadow(color=#000000, offx=1, offy=1); */
+  transform:translateX(-100%);
+  -webkit-transform:translateX(-100%);
+  -moz-transform:translateX(-100%);
+  -ms-transform:translateX(-100%);
+  -o-transform:translateX(-100%);
+}
+
+.marquee p:nth-child(1) {
+  -webkit-animation: left-one 20s  1.5s ease infinite;
+  -moz-animation: left-one 20s  1.5s ease infinite;
+  -ms-animation: left-one 20s  1.5s ease infinite;
+  -o-animation: left-one 20s  1.5s ease infinite;
+  animation: left-one 20s  1.5s ease infinite;
+}
+
+.marquee p:nth-child(2) {
+  -webkit-animation: left-two 20s  1.5s ease infinite;
+  -moz-animation: left-two 20s  1.5s ease infinite;
+  -ms-animation: left-two 20s  1.5s ease infinite;
+  -o-animation: left-two 20s  1.5s ease infinite;
+  animation: left-two 20s  1.5s ease infinite;
+}
+
+.marquee p:nth-child(3) { /*20s 1.0s*/
+ -webkit-animation: left-three 20s  1.5s ease infinite;
+ -moz-animation: left-three 20s  1.5s ease infinite;
+ -ms-animation: left-three 20s  1.5s  ease infinite;
+ -o-animation: left-three 20s  1.5s  ease infinite;
+ animation: left-three 20s  1.5s ease infinite;
+}
+
+.download {
+  position: relative;
+  top:-106px;
+  width: 728px;
+  overflow: hidden;
+}
+
+.download p { /*18s 4s*/
+  -webkit-transform:translateX(100%);
+  -moz-transform:translateX(100%);
+  -ms-transform:translateX(100%);
+  -o-transform:translateX(100%);
+  -webkit-animation:-webkit-transform download 20s  1.5s ease infinite;
+  -moz-animation: download 20s  1.5s ease infinite;
+  -ms-animation: download 20s  1.5s ease infinite;
+  -o-animation: download 20s  1.5s ease infinite;
+  animation: download 20s  1.5s ease infinite;
+  visibility:visible;
+}
+
+/** Webkit Keyframes **/
+@-webkit-keyframes left-one {
+  0% {
+    -webkit-transform:translateX(-100%);
+  }
+  10% {
+    -webkit-transform:translateX(0%);
+  }
+  20% {
+    -webkit-transform:translateX(0%);
+  }
+  33% {
+    -webkit-transform:translateX(100%);
+  }
+  100%{
+    -webkit-transform:translateX(100%);
+  }
+}
+
+@-webkit-keyframes left-two {
+  0% {
+    -webkit-transform:translateX(-100%);
+  }
+   33% {
+    -webkit-transform:translateX(-100%);
+  }
+  43% {
+    -webkit-transform:translateX(0%);
+  }
+  50% {
+    -webkit-transform:translateX(0%);
+  }
+  66% {
+    -webkit-transform:translateX(100%);
+  }
+  100%{
+    -webkit-transform:translateX(100%);
+  }
+}
+
+@-webkit-keyframes left-three {
+  0% {
+    -webkit-transform:translateX(-100%);
+  }
+  66% {
+    -webkit-transform:translateX(-100%);
+  }
+  78% {
+    -webkit-transform:translateX(0%);
+  }
+  90% {
+    -webkit-transform:translateX(0%);
+  }
+  95% {
+    -webkit-transform:translateX(0%);
+  }
+  100%{
+    -webkit-transform:translateX(100%);
+  }
+}
+
+
+@-webkit-keyframes download {
+  0% {
+    -webkit-transform:translateX(100%);
+  }
+  66% {
+  	-webkit-transform:translateX(100%);
+  }
+  78% {
+   -webkit-transform:translateX(100%);
+  }
+  85% {
+   -webkit-transform:translateX(73%);
+  }
+  90% {
+    -webkit-transform:translateX(73%);
+  }
+  95% {
+    -webkit-transform:translateX(73%);
+  }
+  100%{
+    -webkit-transform:translateX(100%);
+  }
+ }
+
+/** Moz Keyframes **/
+@-moz-keyframes left-one {
+  0% {
+    -moz-transform:translateX(-100%);
+  }
+  10% {
+    -moz-transform:translateX(0%);
+  }
+  20% {
+    -moz-transform:translateX(0%);
+  }
+  33% {
+    -moz-transform:translateX(100%);
+  }
+  100%{
+    -moz-transform:translateX(100%);
+  }
+}
+
+@-moz-keyframes left-two {
+  0% {
+    -moz-transform:translateX(-100%);
+  }
+   33% {
+    -moz-transform:translateX(-100%);
+  }
+  43% {
+    -moz-transform:translateX(0%);
+  }
+  50% {
+    -moz-transform:translateX(0%);
+  }
+  66% {
+    -moz-transform:translateX(100%);
+  }
+  100%{
+    -moz-transform:translateX(100%);
+  }
+}
+
+@-moz-keyframes left-three {
+  0% {
+    -moz-transform:translateX(-100%);
+  }
+  66% {
+    -moz-transform:translateX(-100%);
+  }
+  78% {
+    -moz-transform:translateX(0%);
+  }
+  90% {
+    -moz-transform:translateX(0%);
+  }
+  95% {
+    -moz-transform:translateX(0%);
+  }
+  100%{
+    -moz-transform:translateX(100%);
+  }
+}
+
+
+@-moz-keyframes download {
+  0% {
+    -moz-transform:translateX(100%);
+  }
+  66% {
+  	-moz-transform:translateX(100%);
+  }
+  78% {
+   -moz-transform:translateX(100%);
+  }
+  85% {
+   -moz-transform:translateX(73%);
+  }
+  90% {
+    -moz-transform:translateX(73%);
+  }
+  95% {
+    -moz-transform:translateX(73%);
+  }
+  100%{
+    -moz-transform:translateX(100%);
+  }
+ }
+
+ /* transform */
+ @keyframes left-one {
+  0% {
+    transform:translateX(-100%);
+  }
+  10% {
+    transform:translateX(0%);
+  }
+  20% {
+    transform:translateX(0%);
+  }
+  33% {
+    transform:translateX(100%);
+  }
+  100%{
+    transform:translateX(100%);
+  }
+}
+
+@keyframes left-two {
+  0% {
+    transform:translateX(-100%);
+  }
+  33% {
+    transform:translateX(-100%);
+  }
+  43% {
+    transform:translateX(0%);
+  }
+  50% {
+    transform:translateX(0%);
+  }
+  66% {
+    transform:translateX(100%);
+  }
+  100%{
+    transform:translateX(100%);
+  }
+}
+
+@keyframes left-three {
+  0% {
+    transform:translateX(-100%);
+  }
+  66% {
+    transform:translateX(-100%);
+  }
+  78% {
+    transform:translateX(0%);
+  }
+  90% {
+    transform:translateX(0%);
+  }
+  95% {
+    transform:translateX(0%);
+  }
+  100%{
+    transform:translateX(100%);
+  }
+}
+
+
+@keyframes download {
+  0% {
+    transform:translateX(100%);
+  }
+  66% {
+  	transform:translateX(100%);
+  }
+  78% {
+   transform:translateX(100%);
+  }
+  85% {
+   transform:translateX(73%);
+  }
+  90% {
+    transform:translateX(73%);
+  }
+  95% {
+    transform:translateX(73%);
+  }
+  100%{
+    transform:translateX(100%);
+  }
+ }
+
+
+
+</style>
+</head>
+
+<body>
+<a href="http://aig.com">
+<div id="slider-shadow">
+  <div id="slider">
+      <div class="marquee">
+        <p>
+         <img src="images/teks3-doyouhave.png" />
+        </p>
+        <p>
+          <img src="images/teks2-thepower.png" />
+        </p>
+        <p class="img-pause">
+          <img src="images/teks1-advisor.png" />
+        </p>
+      </div>
+  </div> <!--end slider-->
+  <div class="download">
+        <p>
+	        <img src="images/bg2.jpg" />
+	      </p>
+   </div>
+</div>
+</a>
+
+<p>v 0.1.2</p>
+</body>
+</html>
